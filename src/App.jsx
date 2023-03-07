@@ -4,7 +4,6 @@ import Pokemon from './Components/Pokemon';
 import { useEffect, useState } from 'react';
 
 
-
 function App() {
   
   const [ characterData, setCharacterData ] =

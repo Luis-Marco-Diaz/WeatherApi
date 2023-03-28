@@ -37,7 +37,7 @@ const Card = ({loagingData, showData, weather, forecast}) => {
                       alt="City" className="img-fluid rounded-start"/>
                    </div>
                    <div className="col-md-8">
-                      <div className="card-body text-start mt-2" >
+                      <div className="card-body tegitxt-start mt-2" >
 
                       </div>
                    </div>

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Form from './Form';
-import Card from "./Card";
+import Card from './Card';
 
 const WeatherPanel = () => {
   let urlWeather = "https://api.openweathermap.org/data/2.5/weather?appid=5ca72a211182ff3c3aa4fcff283d4fca&lang=es";
@@ -17,7 +17,7 @@ const WeatherPanel = () => {
     setLoading(true);
     setlocation(loc);
 
-    //Weather
+    //Petición del clima desde la url.
     urlWeather = urlWeather + cityurl + loc;
     
     await fetch(urlWeather).then((response) =>{
@@ -34,7 +34,7 @@ const WeatherPanel = () => {
       setShow(false);
     });
 
-    //Forecast
+    //Predicción del clima futuro.
 
     urlForecast = urlForecast + cityurl + loc;
     
@@ -46,7 +46,7 @@ const WeatherPanel = () => {
       console.log(forecastData);
       setWeather(forecastData);
       setLoading(false);
-      setShow(true); // Visulalizar la tarjeta con la info.
+      setShow(true);
     })
     .catch(error => {
       console.log(error);
@@ -59,7 +59,7 @@ const WeatherPanel = () => {
   return(
 
       <React.Fragment>
-        <Form newLocation={getLocation} />
+        <Form newLocation={getLocation}/>
         <Card showData = {show}
               loadingData = {loading}
               weather = {weather}

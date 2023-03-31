@@ -1,28 +1,24 @@
 import './App.css';
 import axios from 'axios';
-import Pokemon from './Components/Pokemon';
+import React from 'react';
 import { useEffect, useState } from 'react';
-
-
+import ReactDOM from 'react-dom/client';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import "bootswatch/dist/lux/bootstrap.min.css";
+import NavBar from "./Components/NavBar";
 
 function App() {
-  
-  const [ characterData, setCharacterData ] =
-  useState ({}) 
-
-  useEffect ( () => {
-
-    axios
-    .get("https://pokeapi.co/api/v2/pokemon/charizard")
-    .then( resp => setCharacterData(resp.data) )
-    .catch(error => console.error(error))
-
-  }, [] )
 
   return (
-    <div className="App">
-      <Pokemon data={characterData} ></Pokemon>
-    </div>
+    <HashRouter>
+      <div className="App">
+        <NavBar></NavBar>
+        <Routes>
+         {/* <Route path="/" element={} /> */}
+        
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
 

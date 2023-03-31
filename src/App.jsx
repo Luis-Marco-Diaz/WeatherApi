@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom/client';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import "bootswatch/dist/lux/bootstrap.min.css";
 import NavBar from "./Components/NavBar";
+import Home from "./Pages/Home";
 
 function App() {
 
@@ -14,8 +15,7 @@ function App() {
       <div className="App">
         <NavBar></NavBar>
         <Routes>
-         {/* <Route path="/" element={} /> */}
-        
+          <Route path="/" element={<Home/>} />
         </Routes>
       </div>
     </HashRouter>

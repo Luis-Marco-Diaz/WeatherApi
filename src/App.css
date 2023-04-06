@@ -1,14 +1,71 @@
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family:  'Lato', sans-serif, 'Sen', sans-serif, system-ui, -apple-system;
+  background-color: rgb(31, 17, 116);
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+  background-color: rgb(5, 5, 43);
+  color: white;
+  padding: 10px;
+}
+.from-control {
+  width: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  max-width: 80%;
+}
+.card-title {
+  position: absolute;
+  padding: 20px;
+}
+
+.card-date {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 60px;
+}
+
+.card-temp {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 260px;
+  font-size: 50px;
+}
+
+.card-desc {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 300px;
+}
+
+.card-text-h{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+.card-text-v{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 150px;
+}
+
+.continer-user {
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 450px;
+  background: radial-gradient(#d5f3ff, #51b4e8);
+  filter: drop-shadow(0px 4.85px 4.85px rgba(0,0,0,0.25));
+  padding-top: 3rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 25px;
+  border: none;
+  line-height: 1rem;
 }

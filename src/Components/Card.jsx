@@ -85,7 +85,7 @@ const Card = ({loagingData, showData, weather, forecast}) => {
               </div>
           </div>
         ):(
-          <h2 className="text-light" >Sin Datos</h2>
+          <h2 className="text-light" >Escribe una ciudad...</h2>
         )
       }
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Spinner from './Spiner';
-import Asia from '../Assets/Asia.jpeg';
+import Mountain from '../Assets/WorldTradeCenter.jpg';
 
 
 
@@ -41,7 +41,7 @@ const Card = ({loagingData, showData, weather, forecast}) => {
   return(
     <div className="mt-5">
       {
-        showData == true? (
+        showData === true? (
           <div className="container">
               <div className="card mb-3 mx-auto bg-dark text-light">
                 <div className="row g-0">
@@ -50,9 +50,9 @@ const Card = ({loagingData, showData, weather, forecast}) => {
                       <p className="card-date"> {date} </p>
                       <h2 className="card-temp"> {(weather.main?.temp - 273.15).toFixed(1)}ºC</h2>
                       <h3 className="card-desc"><img src={iconurl} alt="icon weather"/>{weather.weather?.[0].description}</h3>
-                      <img src={Asia}
+                      <img src={Mountain}
                            alt="City" 
-                           className="img-fluid rounded-start"/>
+                           className=" img-fluid rounded-start"/>
                    </div>
                    <div className="col-md-8">
                       <div className="card-body tegitxt-start mt-2" >

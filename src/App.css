@@ -43,3 +43,29 @@ body {
   padding-left: 20px;
   margin-top: 300px;
 }
+
+.card-text-h{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+.card-text-v{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 150px;
+}
+
+.continer-user {
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 450px;
+  background: radial-gradient(#d5f3ff, #51b4e8);
+  filter: drop-shadow(0px 4.85px 4.85px rgba(0,0,0,0.25));
+  padding-top: 3rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 25px;
+  border: none;
+  line-height: 1rem;
+}

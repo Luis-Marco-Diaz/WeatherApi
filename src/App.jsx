@@ -25,18 +25,10 @@ function App() {
     <div className='App'>
       <NavBar/>
       <WeatherPanel/>
-      <WeatherUser data={data} ></WeatherUser>
+      <WeatherUser data= {data} ></WeatherUser>
     </div>
   );
 }
 
 export default App;
 
-
-/* Útimos cambios: 
-  1) Agregué el CSS del trabajo anterior
-  2) Agregué el componente de WeatherUser para setear el clima por la ubicaicón del usuario
-  3) En App agregué axios e importé el componente user
-
-
-*/

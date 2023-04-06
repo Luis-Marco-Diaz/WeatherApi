@@ -1,19 +1,34 @@
 
 import React from "react";
-import { useState } from 'react'
 
-const WeatherUser = ({ data }) => {
+const WeatherUser = ({data}) => {
   console.log(data)
 
+  let url = "";
+  let iconurl = "";
+
+if (data) {
+  url = "http://openweathermap.org/img/w/";
+  iconurl = url + data.weather?.[0].icon + ".png"
+}
+
   return (
-    <div className="character-card">
-      <h1>Ciudad: {data.name}, {data.sys?.country} </h1>
-      <h3>Temp: {data.main?.temp} ºK </h3>
-      <h3>Vientos: {data.wind?.speed} km/h </h3>
-      <h3>Grados: {(data.main.temp - 273.15).toFixed(1)}ºC </h3> 
-      <h2>{data.weather?.[0].main}</h2>
-      <h4>"{data.weather?.[0].description}"</h4>    
-    </div>
+
+     <div className="mt-5">
+      <div className="continer-user mb-3 mx-auto">  
+      <div className="Card mb-3 mx-auto text-dark">
+                <div className="row g-0">
+                   <div className="col-md-4">
+                      <h3 className="card-title">Tu ubiación es: {data?.name} </h3>
+                      <h5 className="card-text-h">Humedad: {data.main?.humidity}%</h5>
+                      <h5 className="card-text-v">Velocidad del viento: {data.wind?.speed}m/s</h5>
+                      <h2 className="card-temp"> {(data.main?.temp - 273.15).toFixed(1)}ºC</h2>
+                      <h3 className="card-desc"><img src= {iconurl} alt="icon weather"/>{data.weather?.[0].description}</h3>
+                   </div>
+                </div>
+        </div>
+      </div>
+     </div>
 
   );
 

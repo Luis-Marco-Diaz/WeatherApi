@@ -9,13 +9,13 @@ const WeatherPanel = () => {
 
   const [weather, setWeather] = useState([]);
   const [forecast, setForecast] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [show, setShow] = useState(false);
-  const [location, setlocation] = useState("");
+  const [location, setLocation] = useState("");
   
   const getLocation = async(loc) => {
     setLoading(true);
-    setlocation(loc);
+    setLocation(loc);
 
     //Petición del clima desde la url.
     urlWeather = urlWeather + cityurl + loc;
@@ -44,7 +44,7 @@ const WeatherPanel = () => {
     })
     .then((forecastData) => {
       console.log(forecastData);
-      setWeather(forecastData);
+      setForecast(forecastData);
       setLoading(false);
       setShow(true);
     })

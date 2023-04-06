@@ -1,8 +1,8 @@
 const NavBar = () => {
   return (
-    <nav className="Navbar bg-dark text-light mb-5">
+    <nav className="Navbar mb-5">
       <div className="container-fluid">
-        <h3 className="mx-auto">Predicción Meteorológica</h3>
+        <h3 className="mx-auto">React Weather App</h3>
       </div>
     </nav>
   );

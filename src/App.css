@@ -1,9 +1,17 @@
 body {
-  background-color: #2F3544;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family:  'Lato', sans-serif, 'Sen', sans-serif, system-ui, -apple-system;
+  background-color: rgb(31, 17, 116);
 }
 
 .App {
   text-align: center;
+}
+.Navbar {
+  background-color: rgb(5, 5, 43);
+  color: white;
+  padding: 10px;
 }
 .from-control {
   width: 80%;

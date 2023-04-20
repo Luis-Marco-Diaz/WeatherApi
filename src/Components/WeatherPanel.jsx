@@ -11,13 +11,14 @@ const WeatherPanel = () => {
   const [forecast, setForecast] = useState([]);
   const [loading, setLoading] = useState(true);
   const [show, setShow] = useState(false);
+  const [location, setLocation] = useState("");
   
-  const getLocation = async(loc) => {
+  const getLocation = async(location) => {
     setLoading(true);
-    setLocation(loc);
+    setLocation(location);
 
     //Petición del clima desde la url.
-    urlWeather = urlWeather + cityurl + loc;
+    urlWeather = urlWeather + cityurl + location;
     
     await fetch(urlWeather).then((response) =>{
      // if(!response.ok) throw {response}
@@ -35,7 +36,7 @@ const WeatherPanel = () => {
 
     //Predicción del clima futuro.
 
-    urlForecast = urlForecast + cityurl + loc;
+    urlForecast = urlForecast + cityurl + location;
     
     await fetch(urlForecast).then((response) =>{
      // if(!response.ok) throw {response}
@@ -63,6 +64,7 @@ const WeatherPanel = () => {
               loadingData = {loading}
               weather = {weather}
               forecast = {forecast}
+              location = {location}
         />
       </React.Fragment>
 

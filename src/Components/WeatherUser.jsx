@@ -15,6 +15,7 @@ if (data) {
   return (
 
      <div className="mt-5">
+      <br/>
       <div className="continer-user mb-3 mx-auto">  
       <div className="Card mb-3 mx-auto text-dark">
                 <div className="row g-0">
@@ -34,4 +35,4 @@ if (data) {
 
 }
 
-export default WeatherUser
+export default WeatherUser;

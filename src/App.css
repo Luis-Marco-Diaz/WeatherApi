@@ -71,7 +71,9 @@ body {
 }
 
 .Loader {
+  color: White;
   display: flex;
+  flex-direction: row;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -90,7 +92,7 @@ body {
 }
 
 .Logoloader {
-  max-width: 150px;
+  max-width: 10px;
   place-content: center;
   animation: rotation 5s linear both;
 }

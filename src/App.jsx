@@ -32,6 +32,7 @@ function App() {
     <div className='App'>
       <NavBar/>
       {isLoading && <Spiner/>}
+      <Br/>
       <WeatherPanel/>
       <WeatherUser data= {data} ></WeatherUser>
     </div>

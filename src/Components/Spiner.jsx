@@ -1,6 +1,3 @@
-import React from 'react';
-import '../Assets/css/Spiner.css';
-
 const Spinner = () => {
   return(
     return (

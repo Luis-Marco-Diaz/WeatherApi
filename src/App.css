@@ -91,7 +91,7 @@ body {
 }
 
 .Logoloader {
-  max-width: 400px;
+  max-width: 200px;
   place-content: center;
   animation: rotation 5s linear both;
 }

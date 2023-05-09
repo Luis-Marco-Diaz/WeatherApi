@@ -69,3 +69,49 @@ body {
   border: none;
   line-height: 1rem;
 }
+
+.Loader {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: rgb(64, 6, 6);
+  background: linear-gradient(
+    0deg,
+    rgba(64, 6, 6, 1) 0%,
+    rgba(205, 5, 39, 1) 55%
+  );
+}
+
+.Logoloader {
+  max-width: 400px;
+  place-content: center;
+  animation: rotation 5s linear both;
+}
+
+@keyframes rotation {
+  from {
+    tansform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}

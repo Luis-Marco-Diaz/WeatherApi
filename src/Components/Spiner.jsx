@@ -1,5 +1,4 @@
 const Spinner = () => {
-  return(
     return (
     <div className="Loader">
       <h1>Initializing... </h1>

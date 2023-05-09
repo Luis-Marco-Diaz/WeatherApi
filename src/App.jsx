@@ -4,11 +4,18 @@ import NavBar from './Components/Navbar';
 import WeatherPanel from './Components/WeatherPanel';
 import WeatherUser from './Components/WeatherUser';
 import { useEffect, useState } from 'react';
+import Spiner from './Components/Spiner';
 
 
 function App() {
 
-
+  const [isLoading, setIsLoading] = useState(true);
+      useEffect(() => {
+       setTimeout(() => {
+       setIsLoading(false);
+       }, 5000);
+    }, []);
+  
   const [data, setData ] = useState ({})
   useEffect( () => {
     
@@ -24,6 +31,7 @@ function App() {
   return (
     <div className='App'>
       <NavBar/>
+      {isLoading && <Spiner/>}
       <WeatherPanel/>
       <WeatherUser data= {data} ></WeatherUser>
     </div>

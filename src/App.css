@@ -11,6 +11,7 @@ body {
 .Navbar {
   background-color: rgb(5, 5, 43);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   color: white;
   padding: 10px;

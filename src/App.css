@@ -10,9 +10,15 @@ body {
 }
 .Navbar {
   background-color: rgb(5, 5, 43);
+  display: flex;
+  justify-content: center;
   color: white;
   padding: 10px;
 }
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
 .from-control {
   width: 80%;
 }

@@ -88,14 +88,10 @@ body {
   right: 0;
   align-items: center;
   justify-content: center;
-  height: 50%;
+  height: 100%;
   width: 100%;
-  background: rgb(64, 6, 6);
-  background: linear-gradient(
-    0deg,
-    rgba(64, 6, 6, 1) 0%,
-    rgba(205, 5, 39, 1) 55%
-  );
+  background: rgb(73,73,73);
+  background: radial-gradient(circle, rgba(73,73,73,1) 0%, rgba(4,31,68,1) 100%);
 }
 
 .Logoloader {
